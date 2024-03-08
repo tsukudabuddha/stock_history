@@ -11,7 +11,7 @@ export const HistoricResults = ({ portfolioResults }: Params) => {
     <div style={{flexDirection: "column"}}>
     {
       portfolioResults.allocationPerformances.map(allocation => 
-        <Fragment>`${allocation.symbol} - ${formatPercentage(allocation.percentageChange)} ${formatCurrency(allocation.absoluteChange)}`</Fragment>
+        <Fragment>{`${allocation.symbol} - ${formatPercentage(allocation.percentageChange)} ${formatCurrency(allocation.absoluteChange)}`}</Fragment>
         )
     }
     </div>
