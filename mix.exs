@@ -34,8 +34,7 @@ defmodule Backend.MixProject do
     [
       {:phoenix, "~> 1.7.11"},
       {:phoenix_ecto, "~> 4.4"},
-      {:ecto_sql, "~> 3.10"},
-      {:postgrex, ">= 0.0.0"},
+      {:httpoison, "~> 1.8"},
       {:phoenix_live_dashboard, "~> 0.8.3"},
       {:esbuild, "~> 0.8", runtime: Mix.env() == :dev},
       {:tailwind, "~> 0.2", runtime: Mix.env() == :dev},
